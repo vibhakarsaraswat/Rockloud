@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorPrimary">#448AFF</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- MFPTS stands for "Music Folder Parent Text Style" -->
+    <color name="colorMFPTS">#8800A0</color>
+
+    <!-- MFCTS stands for "Music Folder Child Text Style" -->
+    <color name="colorMFCTS">#000000</color>
+
+
+</resources>

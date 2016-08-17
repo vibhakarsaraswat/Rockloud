@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reloMainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.rockloud.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgRose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.2"
+        android:background="@drawable/rose" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/reloAllSongs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="52dp"
+                android:background="#B3ffffff">
+
+                <TextView
+                    android:id="@+id/allSongs"
+                    style="@style/MFParentTextStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/allsongs" />
+
+                <TextView
+                    style="@style/MFChildTextStyle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/allSongs"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/total_allsongs" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/rc_play" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/leloArtAlb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reloAllSongs"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/reloArtists"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:background="#B3ffffff">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/rc_artists" />
+
+                    <TextView
+                        android:id="@+id/txvArtists"
+                        style="@style/MFParentTextStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/artists" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/txvArtists"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/total_artists" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reloAlbums"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="#B3ffffff">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/rc_albums" />
+
+                    <TextView
+                        android:id="@+id/txvAlbums"
+                        style="@style/MFParentTextStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/albums" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/txvAlbums"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/total_albums" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/leloFolPla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leloArtAlb"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/reloFolders"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:background="#B3ffffff">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/rc_folders" />
+
+                    <TextView
+                        android:id="@+id/txvFolders"
+                        style="@style/MFParentTextStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/folders" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/txvFolders"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/total_folders" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reloPlalists"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="#B3ffffff">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/rc_playlists" />
+
+                    <TextView
+                        android:id="@+id/txvPlaylists"
+                        style="@style/MFParentTextStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/playlists" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/txvPlaylists"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/total_playlists" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/leloSESS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/leloFolPla"
+                android:layout_marginBottom="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/reloScanmedia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#B3ffffff">
+
+                    <ImageView
+                        android:id="@+id/imgScan"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/rc_scan" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgScan"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/scanmedia" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reloEqualizer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#B3ffffff">
+
+                    <ImageView
+                        android:id="@+id/imgEqlr"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/rc_equalizer" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgEqlr"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/equalizer" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reloSleep"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#B3ffffff">
+
+                    <ImageView
+                        android:id="@+id/imgSleep"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/rc_sleep" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgSleep"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/sleep" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"></RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/reloSettings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#B3ffffff">
+
+                    <ImageView
+                        android:id="@+id/imgSettings"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/rc_settings" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imgSettings"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:text="@string/settings" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/leloNowPlaying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#4D82B1FF"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgShotdown"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/rc_shotdown" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txvShotDown"
+                style="@style/MFParentTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/song1title" />
+
+
+            <TextView
+                style="@style/MFChildTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txvShotDown"
+                android:layout_margin="5dp"
+                android:text="@string/song1singer" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgPrevious"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/rc_previous" />
+
+        <ImageView
+            android:id="@+id/imgPlay"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/rc_play" />
+
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/rc_next" />
+
+    </LinearLayout>
+
+</RelativeLayout>

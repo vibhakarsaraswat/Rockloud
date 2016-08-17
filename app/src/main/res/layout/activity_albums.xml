@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reloAlbumsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.rockloud.AlbumsActivity">
+
+    <ImageView
+        android:background="@drawable/pebble"
+        android:alpha="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/reloExodusAlbums"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#4D82B1FF">
+
+                <ImageView
+                    android:id="@+id/imgExodusAlbums"
+                    android:src="@drawable/rc_exodus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/imgExodusAlbums"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MFParentTextStyle"
+                        android:id="@+id/txvExodusAlbums"
+                        android:text="@string/album1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:text="@string/album1songs"
+                        android:layout_below="@id/txvExodusAlbums"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:src="@drawable/rc_repeat"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reloBangbangAlbums"
+                android:layout_below="@id/reloExodusAlbums"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#4DFF7043">
+
+                <ImageView
+                    android:id="@+id/imgBangbangAlbums"
+                    android:src="@drawable/rc_bangbang"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/imgBangbangAlbums"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MFParentTextStyle"
+                        android:id="@+id/txvBangbangAlbums"
+                        android:text="@string/album2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:text="@string/album2songs"
+                        android:layout_below="@id/txvBangbangAlbums"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:src="@drawable/rc_repeat"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reloMusicmeAlbums"
+                android:layout_below="@id/reloBangbangAlbums"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:orientation="horizontal"
+                android:background="#4D82B1FF">
+
+                <ImageView
+                    android:id="@+id/imgMusicmeAlbums"
+                    android:src="@drawable/rc_musicme"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/imgMusicmeAlbums"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MFParentTextStyle"
+                        android:id="@+id/txvMusicmeAlbums"
+                        android:text="@string/album3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:text="@string/album3songs"
+                        android:layout_below="@id/txvMusicmeAlbums"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:src="@drawable/rc_repeat"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/leloNowplayingArtists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#4D82B1FF">
+
+        <ImageView
+            android:src="@drawable/rc_shotdown"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp" />
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/MFParentTextStyle"
+                android:id="@+id/txvShotDownAllSongs2"
+                android:text="@string/song1title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+
+            <TextView
+                style="@style/MFChildTextStyle"
+                android:text="@string/song1singer"
+                android:layout_below="@id/txvShotDownAllSongs2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:src="@drawable/rc_previous"
+            android:layout_gravity="center"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:src="@drawable/rc_play"
+            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:src="@drawable/rc_next"
+            android:layout_gravity="center"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

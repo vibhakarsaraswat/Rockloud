@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reloAllsongsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.rockloud.AllsongsActivity">
+
+    <ImageView
+        android:background="@drawable/tree"
+        android:alpha="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/reloShuffle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#B3ffffff">
+
+                <ImageView
+                    android:id="@+id/imgshuffle"
+                    android:src="@drawable/rc_shuffle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    style="@style/MFChildTextStyle"
+                    android:text="@string/shuffle"
+                    android:layout_toRightOf="@id/imgshuffle"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imgsortby"
+                    android:src="@drawable/rc_sortby"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_margin="5dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/reloSong1"
+                android:layout_below="@id/reloShuffle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#4D82B1FF">
+
+                <ImageView
+                    android:id="@+id/imgShotdownAllSongs"
+                    android:src="@drawable/rc_shotdown"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/imgShotdownAllSongs"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MFParentTextStyle"
+                        android:id="@+id/txvShotDownAllSongs"
+                        android:text="@string/song1title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:text="@string/song1singer"
+                        android:layout_below="@id/txvShotDownAllSongs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:src="@drawable/rc_repeat"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reloSong2"
+                android:layout_below="@id/reloSong1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#4DFF7043">
+
+                <ImageView
+                    android:id="@+id/imgOneloveAllSongs"
+                    android:src="@drawable/rc_onelove"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/imgShotdownAllSongs"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MFParentTextStyle"
+                        android:id="@+id/txvOneloveAllSongs"
+                        android:text="@string/song2title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:text="@string/song1singer"
+                        android:layout_below="@id/txvOneloveAllSongs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:src="@drawable/rc_repeat"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reloSong3"
+                android:layout_below="@id/reloSong2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#4D82B1FF">
+
+                <ImageView
+                    android:id="@+id/imgGotloveAllSongs"
+                    android:src="@drawable/rc_gotlove"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/imgGotloveAllSongs"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MFParentTextStyle"
+                        android:id="@+id/txvGotloveAllSongs"
+                        android:text="@string/song3title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:text="@string/song3singer"
+                        android:layout_below="@id/txvGotloveAllSongs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:src="@drawable/rc_repeat"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reloSong4"
+                android:layout_below="@id/reloSong3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:orientation="horizontal"
+                android:background="#4DFF7043">
+
+                <ImageView
+                    android:id="@+id/imgMuzikAllSongs"
+                    android:src="@drawable/rc_muzik"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+                <RelativeLayout
+                    android:layout_toRightOf="@id/imgMuzikAllSongs"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/MFParentTextStyle"
+                        android:id="@+id/txvMuzikAllSongs"
+                        android:text="@string/song4title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        style="@style/MFChildTextStyle"
+                        android:text="@string/song4singer"
+                        android:layout_below="@id/txvMuzikAllSongs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:src="@drawable/rc_repeat"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_margin="5dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/leloNowplayingAllSongs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#4D82B1FF">
+
+        <ImageView
+            android:src="@drawable/rc_shotdown"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp" />
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/MFParentTextStyle"
+                android:id="@+id/txvShotDownAllSongs2"
+                android:text="@string/song1title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+
+            <TextView
+                style="@style/MFChildTextStyle"
+                android:text="@string/song1singer"
+                android:layout_below="@id/txvShotDownAllSongs2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:src="@drawable/rc_previous"
+            android:layout_gravity="center"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:src="@drawable/rc_play"
+            android:layout_gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp" />
+
+        <ImageView
+            android:src="@drawable/rc_next"
+            android:layout_gravity="center"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

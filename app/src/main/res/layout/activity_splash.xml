@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.rockloud.SplashActivity">
+
+    <ImageView
+        android:background="@drawable/beach"
+        android:alpha="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/treble"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splash_treble"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ring"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splash_ring"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/welcome_msg"
+        android:textSize="24sp"
+        android:textColor="#8800A0"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:layout_below="@id/ring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
