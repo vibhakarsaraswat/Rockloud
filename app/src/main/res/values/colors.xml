@@ -10,5 +10,8 @@
     <!-- MFCTS stands for "Music Folder Child Text Style" -->
     <color name="colorMFCTS">#000000</color>
 
+    <!-- Below color is used for setting White but semi transparent Background -->
+     <color name="colorBGTW">#B3ffffff</color>
+
 
 </resources>

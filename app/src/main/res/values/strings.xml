@@ -62,4 +62,19 @@
     <string name="pl_playlists">Playlists(1)</string>
     <string name="pl_createnewpl">+ Create a new playlist</string>
 
+    <!-- These strings are for Activity Intro/Info and will be used for each Activity -->
+    <!-- aim stands for "Activity Intro Message" -->
+    <string name="aim_splash">This is Splash/Welcome Activity</string>
+    <string name="aim_main">This is Home Screen of the App \n Please click Icons to see detailed info</string>
+    <string name="aim_allsongs">Activity displays list of all Songs</string>
+    <string name="aim_artists">Activity displays list of all Artists</string>
+    <string name="aim_albums">Activity displays list of all Albums</string>
+    <string name="aim_folders">Activity displays list of all source Folders</string>
+    <string name="aim_playlists">Activity displays list of all Playlists</string>
+    <string name="aim_scanmedia">Activity displays option to Scan all songs</string>
+    <string name="aim_equalizer">Activity displays option for Audio Settings </string>
+    <string name="aim_sleep">Activity displays option to set Sleep Timer</string>
+    <string name="aim_settings">Activity displays general Settings</string>
+    <string name="aim_nowplaying">Activity displays currently playing Song</string>
+
 </resources>

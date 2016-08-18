@@ -6,8 +6,19 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.rockloud.ScanmediaActivity">
 
+    <TextView
+        android:id="@+id/txvInfoMsgScanmediaActivity"
+        android:text="@string/aim_scanmedia"
+        style="@style/MFChildTextStyle"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <ImageView
         android:background="@drawable/rc_bg_scanmedia"
+        android:layout_below="@id/txvInfoMsgScanmediaActivity"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

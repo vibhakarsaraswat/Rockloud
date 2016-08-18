@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/reloSleepActivity"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:id="@+id/leloSleepActivity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
     tools:context="com.example.android.rockloud.SleepActivity">
 
+    <TextView
+        android:id="@+id/txvInfoMsgSleepActivity"
+        android:text="@string/aim_sleep"
+        style="@style/MFChildTextStyle"
+        android:textAlignment="center"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnShowLocalTime"
+            style="@style/MFChildTextStyle"
+            android:text="Show Local Time"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txvShowLocalTime"
+            style="@style/MFParentTextStyle"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
     <ImageView
+        android:id="@+id/imgSleep"
         android:background="@drawable/rc_bg_sleep"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
-</RelativeLayout>
+</LinearLayout>
